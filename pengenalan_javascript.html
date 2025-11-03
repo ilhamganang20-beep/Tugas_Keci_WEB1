@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Latihan Variabel JavaScript</title>
+  <style>
+    body {
+      background: linear-gradient(to right, #e0f7fa, #b2ebf2);
+      font-family: "Segoe UI", Arial, sans-serif;
+      color: #333;
+      margin: 40px;
+    }
+
+    h2 {
+      text-align: center;
+      color: #00796b;
+      background-color: #b2dfdb;
+      padding: 10px;
+      border-radius: 10px;
+    }
+
+    .output {
+      background-color: #ffffff;
+      border: 2px solid #00796b;
+      border-radius: 8px;
+      padding: 15px;
+      width: 80%;
+      margin: 20px auto;
+      box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+      line-height: 1.6;
+    }
+
+    b {
+      color: #004d40;
+    }
+  </style>
+</head>
+<body>
+  <h2>Contoh Program Variabel dan String JavaScript</h2>
+
+  <div class="output" id="result"></div>
+
+  <script type="text/javascript">
+    // Deklarasi variabel pertama
+    var myFirstVariable;
+    myFirstVariable = "Hello";
+    alert(myFirstVariable);
+
+    // Ubah nilai variabel
+    myFirstVariable = 54321;
+    alert(myFirstVariable);
+
+    // Variabel string
+    var string1 = "Hai, how are you?";
+    var string2 = "Goodbye";
+
+    // Salin nilai string1 ke string2
+    string2 = string1;
+    alert("Nilai string2 setelah disalin: " + string2);
+
+    // Output awal
+    var output = "";
+    output += "<b>Nilai awal string1:</b> " + string1 + "<br>";
+    output += "<b>Nilai awal string2:</b> " + string2 + "<br><hr>";
+
+    // Ubah nilai string1
+    string1 = "Now for something different";
+    alert("Nilai string1 baru: " + string1);
+    alert("Nilai string2 tetap: " + string2);
+
+    // Output setelah perubahan
+    output += "<b>Hasil string1 setelah diubah:</b> " + string1 + "<br>";
+    output += "<b>Hasil string2 setelah diubah:</b> " + string2 + "<br>";
+
+    // Tampilkan ke dalam div
+    document.getElementById("result").innerHTML = output;
+  </script>
+</body>
+</html>

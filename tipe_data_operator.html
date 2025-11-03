@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Program Greeting dengan JavaScript</title>
+  <style>
+    body {
+      background: linear-gradient(to right, #d1c4e9, #b39ddb);
+      font-family: "Poppins", sans-serif;
+      color: #333;
+      text-align: center;
+      padding-top: 60px;
+    }
+
+    h1 {
+      color: #4527a0;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+
+    .output-box {
+      display: inline-block;
+      background: #fff;
+      border: 3px solid #5e35b1;
+      border-radius: 12px;
+      padding: 25px 40px;
+      box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+      text-align: left;
+      line-height: 1.6;
+      font-size: 1.1em;
+      width: 60%;
+    }
+
+    .label {
+      color: #4527a0;
+      font-weight: bold;
+    }
+
+    .highlight {
+      color: #311b92;
+      font-weight: bold;
+    }
+
+    footer {
+      margin-top: 40px;
+      color: #555;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>👋 Program Greeting (Sapa Nama Anda)</h1>
+
+  <div class="output-box" id="hasil">
+    <!-- Hasil akan ditampilkan melalui JavaScript -->
+  </div>
+
+  <footer>Latihan JavaScript & CSS — by Ilham Ganang</footer>
+
+  <script language="JavaScript" type="text/javascript">
+    // Variabel awal
+    var greetingString = "Hello";
+
+    // Minta input nama dari pengguna
+    var myName = prompt("Please enter your name:", "");
+
+    // Gabungkan string sapaan dan nama
+    var concatString;
+    concatString = greetingString + " " + myName;
+
+    // Tampilkan hasil di dalam elemen HTML
+    document.getElementById("hasil").innerHTML = `
+      <p><span class="label">Greeting String:</span> ${greetingString}</p>
+      <p><span class="label">Your Name:</span> ${myName}</p>
+      <hr>
+      <p><span class="label">Combined Result:</span><br>
+      <span class="highlight">${concatString}</span></p>
+    `;
+  </script>
+
+</body>
+</html>

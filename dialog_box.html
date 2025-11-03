@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Menghitung Luas Persegi Panjang</title>
+  <style>
+    body {
+      background: linear-gradient(to right, #e3f2fd, #bbdefb);
+      font-family: "Poppins", sans-serif;
+      color: #333;
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    h1 {
+      color: #1565c0;
+      font-size: 2em;
+      margin-bottom: 10px;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+    }
+
+    .container {
+      display: inline-block;
+      background: #ffffff;
+      border: 3px solid #1565c0;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      padding: 20px 40px;
+      text-align: left;
+      font-size: 1.1em;
+      line-height: 1.6;
+    }
+
+    .label {
+      color: #0d47a1;
+      font-weight: bold;
+    }
+
+    .highlight {
+      color: #1976d2;
+      font-weight: bold;
+    }
+
+    footer {
+      margin-top: 40px;
+      color: #555;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <h1>💡 Program Menghitung Luas Persegi Panjang</h1>
+
+  <div class="container" id="hasil">
+    <!-- Hasil akan ditampilkan lewat JavaScript -->
+  </div>
+
+  <footer>
+    Dibuat dengan ❤️ menggunakan JavaScript & CSS
+  </footer>
+
+  <script language="JavaScript" type="text/javascript">
+    // Input data
+    var nama = prompt("Masukkan nama Anda:", "");
+    var panjang = prompt("Masukkan panjang (cm):", "25");
+    var lebar = prompt("Masukkan lebar (cm):", "");
+
+    // Hitung luas
+    var luas = parseFloat(panjang) * parseFloat(lebar);
+
+    // Tampilkan hasil ke dalam div dengan format HTML yang rapi
+    document.getElementById("hasil").innerHTML = `
+      <p><span class="label">Programmer:</span> ${nama}</p>
+      <p><span class="label">Panjang:</span> ${panjang} cm</p>
+      <p><span class="label">Lebar:</span> ${lebar} cm</p>
+      <hr>
+      <p><span class="label">Luas Persegi Panjang:</span><br>
+      <span class="highlight">${panjang} × ${lebar} = ${luas} cm<sup>2</sup></span></p>
+    `;
+  </script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contoh Warna Latar Belakang CSS</title>
+
+<style>
+/* 🌈 Gaya dasar halaman */
+body {
+  background: #6cb4c4 url('myflower.gif') repeat-y left top;
+  background-attachment: fixed;
+  margin: 60px 40px 40px 120px;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  color: #333;
+}
+
+/* 🏷️ Judul utama */
+h1 {
+  background-color: #4a90e2;
+  color: white;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+}
+
+/* ✍️ Paragraf umum */
+p {
+  background-color: #e8f9ff;
+  padding: 10px;
+  border-left: 5px solid #4a90e2;
+  border-radius: 5px;
+}
+
+/* 📦 Elemen div utama */
+div {
+  border: 5px solid #aaa;
+  padding: 20px;
+  background-color: #c7d9eb;
+  color: #4b0082;
+  font-size: 16pt;
+  text-align: justify;
+  line-height: 1.7;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
+/* 🔗 Link styling */
+a {
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease, background-color 0.3s ease;
+  padding: 3px 6px;
+  border-radius: 4px;
+}
+
+a:link { color: #e74c3c; }       /* belum dikunjungi */
+a:visited { color: #27ae60; }    /* sudah dikunjungi */
+a:hover { 
+  color: #fff;
+  background-color: #9b59b6;
+} 
+a:active { color: #2980b9; }     /* saat diklik */
+</style>
+</head>
+
+<body>
+  <h1>Contoh Penggunaan Warna Latar Belakang dalam CSS</h1>
+
+  <div>
+    Ini adalah teks di dalam elemen <b>div</b>.
+
+    <p>Paragraph ini memiliki warna latar belakang tersendiri.</p>
+
+    <b>Museum Sejarah Jakarta</b><br>
+    Museum Fatahillah, juga dikenal sebagai <b>Museum Sejarah Jakarta</b> atau <i>Museum Batavia</i>, terletak di Jalan Taman Fatahillah No. 2, Jakarta Barat dengan luas lebih dari 1.300 meter persegi. 
+    <a href="latih1.html">Gedung</a> ini dahulu adalah Stadhuis atau Balai Kota, dibangun tahun 1707–1710 atas perintah Gubernur Jenderal Johan Van Hoorn.
+    <br><br>
+    Bangunan ini mirip dengan Istana Dam di Amsterdam, terdiri atas bangunan utama dengan dua sayap timur dan barat serta ruang bawah tanah yang digunakan sebagai penjara. 
+    <br><br>
+    Pada 30 Maret 1974, gedung ini diresmikan sebagai <b>Museum Fatahillah</b>. 
+    Arsitekturnya bergaya Barok klasik abad ke-17 dengan tiga lantai, cat kuning tanah, dan kusen kayu jati hijau tua. 
+    <br><br>
+    Museum ini memiliki luas lebih dari 13.000 meter persegi, halaman dengan konblok, kolam, dan pepohonan tua yang rindang.
+    <br><br>
+    <i>Kami masih berada di dalam elemen div ini.</i>
+  </div>
+</body>
+</html>

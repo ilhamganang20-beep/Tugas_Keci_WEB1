@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Penggunaan Align pada CSS</title>
+
+<style>
+/* 🌈 Gaya umum halaman */
+body {
+  background: #e6f2ff url('myflower.gif') repeat-y left top;
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: #333;
+  margin: 50px;
+  line-height: 1.6;
+}
+
+/* 🏷️ Judul utama */
+h1 {
+  text-align: center;
+  color: #2c3e50;
+  background-color: #aed6f1;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+}
+
+/* 🕒 Paragraf tanggal */
+p.date {
+  text-align: right;
+  color: #555;
+  font-style: italic;
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+/* 📜 Paragraf utama */
+p.main {
+  text-align: justify;
+  font-size: 18px;
+  color: #d35400;
+  background-color: #fff8f0;
+  border-left: 6px solid #f39c12;
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* 📝 Paragraf catatan */
+p.note {
+  font-size: 15px;
+  background-color: #ecf0f1;
+  padding: 10px;
+  border-radius: 6px;
+  color: #2c3e50;
+  margin-top: 25px;
+}
+</style>
+</head>
+
+<body>
+  <h1>Penggunaan Align pada CSS</h1>
+
+  <p class="date">Oktober, 2025</p>
+
+  <p class="main">
+    Ayah saya selalu memberi nasihat ketika saya masih muda dan masih sangat perlu bimbingan:
+    <br><br>
+    <i>"Apabila kamu dikritik oleh seseorang, ingatlah bahwa setiap orang di dunia memiliki keunikannya masing-masing."</i>
+    <br><br>
+    My father always gave advice when I was young and still in need of supervision:
+    <br><br>
+    <i>"If you are criticized by someone, remember that everyone in the world has their own strengths."</i>
+  </p>
+
+  <p class="note"><b>Note:</b> Coba ubah ukuran jendela browser untuk melihat efek <b>justify</b> pada paragraf di atas.</p>
+</body>
+</html>

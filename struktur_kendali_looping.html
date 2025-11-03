@@ -1,0 +1,91 @@
+<html>
+<head>
+<title>Penjualan Barang</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f8ff;
+        color: #333;
+        text-align: center;
+        padding: 20px;
+    }
+
+    h2 {
+        color: #0066cc;
+        font-size: 28px;
+    }
+
+    .output {
+        background-color: #ffffff;
+        border: 2px solid #0066cc;
+        border-radius: 10px;
+        width: 500px;
+        margin: 20px auto;
+        padding: 20px;
+        box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+        text-align: left;
+    }
+
+    .output pre {
+        font-size: 16px;
+        color: #444;
+        line-height: 1.6;
+    }
+
+    .creator {
+        color: red;
+        font-weight: bold;
+        animation: blink 1s infinite;
+    }
+
+    @keyframes blink {
+        50% { opacity: 0; }
+    }
+
+    img {
+        vertical-align: middle;
+        margin-right: 10px;
+    }
+</style>
+</head>
+
+<body>
+<h2>Program Penjualan Barang</h2>
+
+<script language="JavaScript" type="text/javascript">
+var myName = prompt("Please enter your name", "Budi");
+var nb = prompt("Please enter the product name", "");
+var hs = prompt("Please enter the price per unit", "");
+var jb = prompt("Please enter the quantity", "");
+
+var hb = hs * jb;
+var disc;
+
+if (hb > 500000) {
+    disc = (5 / 100) * hb;
+} else if (hb > 300000) {
+    disc = (2 / 100) * hb;
+} else {
+    disc = (0.5 / 100) * hb;
+}
+
+var hbb = hb - disc;
+
+document.write("<div class='output'>");
+document.write("<font size=5 color='blue'><img src='keranjang.jpg' width='75' height='60'>Penjualan Harga Barang</font><br>");
+document.write("<pre>");
+document.write("========================================<br>");
+document.write("Nama Barang       : " + nb + "<br>");
+document.write("Harga Satuan      : Rp " + hs + "<br>");
+document.write("Jumlah Barang     : " + jb + "<br>");
+document.write("Harga Kotor       : Rp " + hb + "<br>");
+document.write("Discount          : Rp " + disc + "<br>");
+document.write("Harga Bersih      : Rp " + hbb + "<br>");
+document.write("========================================<br>");
+document.write("</pre>");
+document.write("<span class='creator'>Created by " + myName + "</span>");
+document.write("</div>");
+</script>
+
+</body>
+</html>
